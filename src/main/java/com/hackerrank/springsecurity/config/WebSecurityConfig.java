@@ -20,7 +20,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .password("{noop}admin_password")
                 .authorities("ROLE_OFFICE_ADMIN");
     }
-    
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         http.csrf().disable()
